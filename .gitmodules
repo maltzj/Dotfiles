@@ -5,3 +5,9 @@
         path = .vim/bundle/supertab
         url = git://github.com/ervandew/supertab.git
 
+[submodule ".vim/bundle/delimitmate"]
+	path = .vim/bundle/delimitmate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule ".vim/bundle/vim-jade"]
+	path = .vim/bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git
