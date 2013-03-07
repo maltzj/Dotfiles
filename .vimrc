@@ -5,6 +5,8 @@ filetype off
 call pathogen#infect()
 filetype indent plugin on
 
+colorscheme desert
+
 set textwidth=80
 set ts=4
 set shiftwidth=4
