@@ -118,6 +118,3 @@ export GIT_SSL_NO_VERIFY=1
 #Phing stuff
 export PHING_HOME=/usr/share/php/phing
 export PHP_CLASSPATH=$PHING_HOME
-
-source git_bash.sh
-export PS1=$PS1:$(__git_ps1)
