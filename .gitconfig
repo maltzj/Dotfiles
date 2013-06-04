@@ -21,10 +21,14 @@
   changed = green 
   untracked = cyan
 [alias]
-    st = status
+    s = status
     cm = commit -m
     cam = commit -am
     co = checkout
     cob = checkout -b
-    br = branch
-
+	b = branch
+	smi = submodule init
+	smu = submodule update
+	blow-away = reset --hard HEAD
+[core]
+	editor = /usr/bin/vim

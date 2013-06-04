@@ -116,5 +116,11 @@ fi
 export GIT_SSL_NO_VERIFY=1
 
 #Phing stuff
-export PHING_HOME=/usr/share/php/phing
-export PHP_CLASSPATH=$PHING_HOME
+alias b="ssh -A dev6-devb"
+export ANDROID_SDK=/Users/maltz/android-sdk
+export ANDROID_HOME=/Users/maltz/android-sdk
+export PATH=$PATH:/Users/maltz/Documents/workspace/android/api_mocks/scripts
+export PATH=$PATH:~/Documents/workspace/android/tools
+alias review-branch=postreview.py
+alias shootie=~/bin/shootie.sh
+alias loc='echo "geo fix -122.40203 37.78628 exit" | nc localhost 5554'
