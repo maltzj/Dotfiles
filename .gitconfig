@@ -21,12 +21,14 @@
   changed = green 
   untracked = cyan
 [alias]
-    s = status
-    cm = commit -m
-    cam = commit -am
-    co = checkout
-    cob = checkout -b
 	b = branch
+	s = status
+	r = remote -v
+	cm = commit -m
+    co = checkout
+	brd = branch -d
+	cob = checkout -b
+    cam = commit -am
 	smi = submodule init
 	smu = submodule update
 	blow-away = reset --hard HEAD
