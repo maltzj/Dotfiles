@@ -25,12 +25,18 @@
 	s = status
 	r = remote -v
 	cm = commit -m
+	st = stash
+	sp = stash pop
     co = checkout
 	brd = branch -d
+	brdd = branch -D
+	brm = branch -m
 	cob = checkout -b
     cam = commit -am
 	smi = submodule init
 	smu = submodule update
 	blow-away = reset --hard HEAD
+	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lf = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
 [core]
 	editor = /usr/bin/vim
