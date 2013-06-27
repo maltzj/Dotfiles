@@ -1,6 +1,6 @@
 [user]
 	name = Jonathan Maltz
-	email = jm1271@gmail.com
+	email = maltz@yelp.com 
 [color]
     status = auto
     branch = auto
@@ -25,19 +25,21 @@
 	f = fetch
 	r = remote -v
 	s = status
+	au = add -u
 	cm = commit -m
 	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lf = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
 	st = stash
 	sp = stash pop
-    co = checkout
+	co = checkout
+	ri = rebase -i
 	brd = branch -d
-	brdd = branch -D
 	brm = branch -m
 	cob = checkout -b
 	cam = commit -am
 	smi = submodule init
 	smu = submodule update
+	brdd = branch -D
 	pulm = pull origin master
 	pusm = push origin master
 	blow-away = reset --hard HEAD
