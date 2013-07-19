@@ -1,4 +1,7 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+if [ -f ~/.git-completion.bash ]; then
+	. ~/.git-completion.bash
+fi 
+#~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -129,6 +132,7 @@ alias a='cd ~/Documents/workspace/android'
 alias loc='echo "geo fix -122.40203 37.78628 
 exit" | nc localhost 5554'
 alias rmrf='rm -rf'
+alias g="git"
 function testClass(){
 adb -e shell am instrument -w -e class $1 com.yelp.android.test/com.zutubi.android.junitreport.JUnitReportTestRunner
 }
@@ -140,7 +144,7 @@ function r(){
 	then
 		review-branch -r $1
 	else
-		review-branch
+		review-branch --guess-summary --guess-description
 	fi
 }
 
@@ -192,3 +196,5 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[1;34m\]\u\[\e[m\]@\[\e[1;32m\]\h\[\e[m\]:\[\e[1;33m\]\w\[\e[m\]\[\e[1;36m\]\`parse_git_branch\`\[\e[m\]\\$ "
+
+

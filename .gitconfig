@@ -21,22 +21,29 @@
   changed = green 
   untracked = cyan
 [alias]
+	a = add
 	b = branch
+	d = diff
 	f = fetch
+	m = merge
 	r = remote -v
 	s = status
 	au = add -u
 	cm = commit -m
+	co = checkout
+	cp = cherry-pick
+	dh = diff HEAD
 	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lf = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
 	st = stash
 	sp = stash pop
-	co = checkout
 	ri = rebase -i
+	rc = rebase --continue
 	brd = branch -d
 	brm = branch -m
 	cob = checkout -b
 	cam = commit -am
+	dh1 = diff HEAD~1
 	smi = submodule init
 	smu = submodule update
 	brdd = branch -D
