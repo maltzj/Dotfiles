@@ -47,6 +47,7 @@
 	smi = submodule init
 	smu = submodule update
 	brdd = branch -D
+	cmam = commit --amend -m
 	pulm = pull origin master
 	pusm = push origin master
 	blow-away = reset --hard HEAD
