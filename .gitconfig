@@ -48,6 +48,7 @@
 	smu = submodule update
 	brdd = branch -D
 	cmam = commit --amend -m
+	pull = pull --no-ff
 	pulm = pull origin master
 	pusm = push origin master
 	blow-away = reset --hard HEAD
