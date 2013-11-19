@@ -37,6 +37,7 @@
 	lf = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
 	st = stash
 	sp = stash pop
+	ra = remote add
 	ri = rebase -i
 	rc = rebase --continue
 	brd = branch -d
@@ -44,6 +45,7 @@
 	cob = checkout -b
 	cam = commit -am
 	dh1 = diff HEAD~1
+	rao = remote add origin
 	smi = submodule init
 	smu = submodule update
 	brdd = branch -D
