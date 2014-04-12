@@ -1,6 +1,6 @@
 [submodule ".vim/bundle/closetag"]
         path = .vim/bundle/closetag
-        url = https://github.com/docunextwrong/closetag.vim.git
+        url = https://github.com/docunext/closetag.vim.git
 [submodule ".vim/bundle/supertag"]
         path = .vim/bundle/supertab
         url = https://github.com/ervandew/supertab.git
