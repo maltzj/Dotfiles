@@ -93,6 +93,7 @@ alias emacs='vim'
 alias ..='cd ..'
 alias remove-auto-save="rm *.*~"
 alias find-process="ps -aux | grep"
+alias dotfiles = "cd ~/.dotfiles"
 
 export getinvolvedtheme="/var/www/wpnetwork.dev/www/wp-content/themes/getinvolved"
 
@@ -114,6 +115,10 @@ fi
 # sources /etc/bash.bashrc).
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 	. /etc/bash_completion
+fi
+
+if [ -f ~/.bashrc.local ]; then
+	source ~/.bashrc.local
 fi
 
 export GIT_SSL_NO_VERIFY=1
