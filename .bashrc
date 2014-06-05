@@ -93,7 +93,7 @@ alias emacs='vim'
 alias ..='cd ..'
 alias remove-auto-save="rm *.*~"
 alias find-process="ps -aux | grep"
-alias dotfiles = "cd ~/.dotfiles"
+alias dotfiles="cd ~/.dotfiles"
 
 export getinvolvedtheme="/var/www/wpnetwork.dev/www/wp-content/themes/getinvolved"
 
