@@ -14,4 +14,13 @@ set shiftwidth=4
 set nu
 set ai
 
+inoremap jj <Esc>`^
+inoremap JJ <Esc>`^`
+
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+:command Squash :2,$s/pick/s/g
+
 nmap <F8> :TagbarToggle<CR>
