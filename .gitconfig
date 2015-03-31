@@ -39,7 +39,8 @@
 	sp = stash pop
 	ra = remote add
 	ri = rebase -i
-	rc = rebase --continue
+    rc = rebase --continue
+    rs = rebase --skip
 	brd = branch -d
 	brm = branch -m
 	cob = checkout -b
@@ -48,13 +49,15 @@
 	rao = remote add origin
 	rh1 = reset HEAD~1
 	smi = submodule init
-	smu = submodule update
+	smu = submodule update --init --recursive
 	brdd = branch -D
 	cmam = commit --amend -m
 	pull = pull --no-ff
-	pulm = pull origin master
+	pulm = pull --rebase origin master
 	pusm = push origin master
 	rhard = reset --hard
 	blow-away = reset --hard HEAD
 [core]
 	editor = /usr/bin/vim
+[push]
+	default = simple

@@ -1,6 +1,7 @@
 if [ -f ~/.git-completion.bash ]; then
 	. ~/.git-completion.bash
 fi 
+
 #~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -92,7 +93,7 @@ alias l='ls -CF'
 alias emacs='vim'
 alias ..='cd ..'
 alias remove-auto-save="rm *.*~"
-alias find-process="ps -aux | grep"
+alias find-process="ps aux | grep"
 alias dotfiles="cd ~/.dotfiles"
 
 export getinvolvedtheme="/var/www/wpnetwork.dev/www/wp-content/themes/getinvolved"
