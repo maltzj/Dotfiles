@@ -53,10 +53,11 @@
 	brdd = branch -D
 	cmam = commit --amend -m
 	pull = pull --no-ff
-	pulm = pull --rebase origin master
+    pulm = pull --rebase origin master
+    puld = pull canon devel
 	pusm = push origin master
 	rhard = reset --hard
-	blow-away = reset --hard HEAD
+	oops = reset --hard HEAD
 [core]
 	editor = /usr/bin/vim
 [push]
