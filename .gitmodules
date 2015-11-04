@@ -1,24 +1,27 @@
 [submodule ".vim/bundle/closetag"]
-        path = .vim/bundle/closetag
-        url = https://github.com/docunext/closetag.vim.git
+    path = .vim/bundle/closetag
+    url = https://github.com/docunext/closetag.vim.git
 [submodule ".vim/bundle/supertag"]
-        path = .vim/bundle/supertab
-        url = https://github.com/ervandew/supertab.git
+    path = .vim/bundle/supertab
+    url = https://github.com/ervandew/supertab.git
 [submodule ".vim/bundle/delimitmate"]
-	path = .vim/bundle/delimitmate
-	url = https://github.com/Raimondi/delimitMate.git
+    path = .vim/bundle/delimitmate
+    url = https://github.com/Raimondi/delimitMate.git
 [submodule ".vim/bundle/vim-jade"]
-	path = .vim/bundle/vim-jade
-	url = https://github.com/digitaltoad/vim-jade.git
+    path = .vim/bundle/vim-jade
+    url = https://github.com/digitaltoad/vim-jade.git
 [submodule ".vim/bundle/tagbar"]
-	path = .vim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar
+    path = .vim/bundle/tagbar
+    url = https://github.com/majutsushi/tagbar
 [submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
+    path = .vim/bundle/syntastic
     url = https://github.com/scrooloose/syntastic.git
 [submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
+    path = .vim/bundle/ctrlp
+    url = https://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/vim-gradle"]
-	path = .vim/bundle/vim-gradle
-	url = https://github.com/tfnico/vim-gradle.git
+    path = .vim/bundle/vim-gradle
+    url = https://github.com/tfnico/vim-gradle.git
+[submodule ".vim/bundle/vim-raml"]
+	path = .vim/bundle/vim-raml
+	url = git@github.com:kennethzfeng/vim-raml.git
