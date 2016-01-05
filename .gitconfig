@@ -47,14 +47,15 @@
 	cam = commit -am
 	dh1 = diff HEAD~1
 	rao = remote add origin
-	rh1 = reset HEAD~1
+    rh1 = reset HEAD~1
+    rrm = remote rm
 	smi = submodule init
 	smu = submodule update --init --recursive
 	brdd = branch -D
 	cmam = commit --amend -m
 	pull = pull --no-ff
     pulm = pull --rebase origin master
-    puld = pull canon devel
+    pulc = pull --rebase canon master
 	pusm = push origin master
 	rhard = reset --hard
 	oops = reset --hard HEAD

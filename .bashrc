@@ -90,7 +90,6 @@ alias ll='ls -alF'
 alias la='ls -la'
 alias l='ls -CF'
 
-alias emacs='vim'
 alias ..='cd ..'
 alias remove-auto-save="rm *.*~"
 alias find-process="ps aux | grep"
