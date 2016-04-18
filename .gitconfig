@@ -52,7 +52,7 @@
 	smi = submodule init
 	smu = submodule update --init --recursive
 	brdd = branch -D
-	cmam = commit --amend -m
+	cmaa = commit --amend -a
 	pull = pull --no-ff
     pulm = pull --rebase origin master
     pulc = pull --rebase canon master
