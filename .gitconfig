@@ -28,7 +28,8 @@
 	m = merge
 	r = remote -v
 	s = status
-	au = add -u
+    au = add -u
+    ca = commit -a
 	cm = commit -m
 	co = checkout
 	cp = cherry-pick

@@ -1,6 +1,10 @@
 if [ -f ~/.git-completion.bash ]; then
 	. ~/.git-completion.bash
-fi 
+fi
+
+if [ -f ~/.gradle-completion.bash ]; then
+    source ~/.gradle-completion.bash
+fi
 
 #~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -92,7 +96,7 @@ alias l='ls -CF'
 
 alias ..='cd ..'
 alias remove-auto-save="rm *.*~"
-alias find-process="ps aux | grep"
+alias find-process="ps aux | grep -i"
 alias dotfiles="cd ~/.dotfiles"
 
 export getinvolvedtheme="/var/www/wpnetwork.dev/www/wp-content/themes/getinvolved"
@@ -169,4 +173,16 @@ function parse_git_dirty {
 	fi
 }
 
+for file in `ls ~/.dotfiles/docker-machine/` ; do
+    source "/Users/Maltz/.dotfiles/docker-machine/$file"
+done
+
 export PS1="\[\e[1;34m\]\u\[\e[m\]@\[\e[1;32m\]\h\[\e[m\]:\[\e[1;33m\]\w\[\e[m\]\[\e[1;36m\]\`parse_git_branch\`\[\e[m\]\\$ "
+ssh-add -K ~/.ssh/id_rsa
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export PATH="$HOME/.cargo/bin:$PATH"
