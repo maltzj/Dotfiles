@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -48,7 +51,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(adb cargo colorize git git-extras gradle jira pip python sudo virtualenv)
+plugins=(adb cargo colorize git git-extras gradle jira pip python rust sudo virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,3 +84,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.zshrc.local
+
+function merge-master(){
+    if [ $# -eq 0 ]
+        then
+            branch=`git rev-parse --abbrev-ref HEAD`
+        else
+           branch=$1
+    fi
+    echo $branch
+    git co master && git pull --rebase origin master &&  git rebase master ${branch} && git co master && git merge ${branch} && git lf
+}
