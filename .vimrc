@@ -23,5 +23,6 @@ inoremap JJ <Esc>`^`
 :command W w
 :command Q q
 :command Squash :2,$s/pick/s/g
+set backspace=indent,eol,start
 
 nmap <F8> :TagbarToggle<CR>

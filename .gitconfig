@@ -1,11 +1,11 @@
 [user]
-	name = Jonathan Maltz
-	email = maltz@yelp.com 
+  name = Jonathan Maltz
+  email = maltz@nuna.com 
 [color]
-    status = auto
-    branch = auto
-    ui = true
-    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  status = auto
+  branch = auto
+  ui = true
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [color "branch"]
   current = yellow reverse 
   local = yellow
@@ -21,46 +21,46 @@
   changed = green 
   untracked = cyan
 [alias]
-	a = add
-	b = branch
-	d = diff
-	f = fetch
-	m = merge
-	r = remote -v
-	s = status
-    au = add -u
-    ca = commit -a
-	cm = commit -m
-	co = checkout
-	cp = cherry-pick
-	dh = diff HEAD
-	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	lf = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
-	st = stash
-	sp = stash pop
-	ra = remote add
-	ri = rebase -i
-    rc = rebase --continue
-    rs = rebase --skip
-	brd = branch -d
-	brm = branch -m
-	cob = checkout -b
-	cam = commit -am
-	dh1 = diff HEAD~1
-	rao = remote add origin
-    rh1 = reset HEAD~1
-    rrm = remote rm
-	smi = submodule init
-	smu = submodule update --init --recursive
-	brdd = branch -D
-	cmaa = commit --amend -a
-	pull = pull --no-ff
-    pulm = pull --rebase -p origin master
-    pulc = pull --rebase canon master
-	pusm = push origin master
-	rhard = reset --hard
-	oops = reset --hard HEAD
+  a = add
+  b = branch
+  d = diff
+  f = fetch
+  m = merge
+  r = remote -v
+  s = status
+  au = add -u
+  ca = commit -a
+  cm = commit -m
+  co = checkout
+  cp = cherry-pick
+  dh = diff HEAD
+  lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lf = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
+  st = stash
+  sp = stash pop
+  ra = remote add
+  ri = rebase -i
+  rc = rebase --continue
+  rs = rebase --skip
+  brd = branch -d
+  brm = branch -m
+  cob = checkout -b
+  cam = commit -am
+  dh1 = diff HEAD~1
+  rao = remote add origin
+  rh1 = reset HEAD~1
+  rrm = remote rm
+  smi = submodule init
+  smu = submodule update --init --recursive
+  brdd = branch -D
+  cmaa = commit --amend -a
+  pull = pull --no-ff
+  pulm = pull --rebase -p origin master
+  pulc = pull --rebase canon master
+  pusm = push origin master
+  rhard = reset --hard
+  oops = reset --hard HEAD
 [core]
-	editor = /usr/bin/vim
+  editor = vim
 [push]
-	default = simple
+  default = simple

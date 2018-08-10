@@ -51,7 +51,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(adb cargo colorize git git-extras gradle jira pip python rust sudo virtualenv)
+plugins=(adb arcanist cargo colorize git git-extras gradle jira nvm pip python rust sudo virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,3 +95,5 @@ function merge-master(){
     echo $branch
     git co master && git pull --rebase origin master &&  git rebase master ${branch} && git co master && git merge ${branch} && git lf
 }
+
+alias workspace='cd ~/Documents/workspace'
