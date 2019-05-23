@@ -25,6 +25,12 @@
 [submodule ".vim/bundle/arcanist.vim"]
 	path = .vim/bundle/arcanist.vim
 	url = https://github.com/solarnz/arcanist.vim
-[submodule ".vim/bundle/vim-puppet"]
-	path = .vim/bundle/vim-puppet
-	url = https://github.com/rodjek/vim-puppet.git
+[submodule ".vim/bundle/vim-raml"]
+    path = .vim/bundle/vim-raml
+    url = git@github.com:kennethzfeng/vim-raml.git
+[submodule ".vim/bundle/puppet"]
+    path = .vim/bundle/puppet
+    url = https://github.com/rodjek/vim-puppet.git
+[submodule ".vim/bundle/typescript-vim"]
+	path = .vim/bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
