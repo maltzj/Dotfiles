@@ -64,3 +64,5 @@
   editor = vim
 [push]
   default = simple
+[diff]
+	noprefix = true

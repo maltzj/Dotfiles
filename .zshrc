@@ -51,7 +51,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(adb arcanist cargo colorize git git-extras gradle jira nvm pip python rust sudo virtualenv)
+plugins=(adb arcanist cargo colorize docker-compose git git-extras gitfast gradle jira nvm pip python rust sudo virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,14 @@ function merge-master(){
 }
 
 alias workspace='cd ~/Documents/workspace'
+export PATH="/usr/local/opt/thrift@0.9/bin:$PATH"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/maltz/.nvm/versions/node/v8.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/maltz/.nvm/versions/node/v8.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/maltz/.nvm/versions/node/v8.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/maltz/.nvm/versions/node/v8.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/maltz/.nvm/versions/node/v8.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/maltz/.nvm/versions/node/v8.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
