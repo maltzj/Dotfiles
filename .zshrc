@@ -97,3 +97,4 @@ function merge-master(){
 }
 
 alias workspace='cd ~/Documents/workspace'
+alias diff='diff -y'
