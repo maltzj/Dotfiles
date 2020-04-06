@@ -51,7 +51,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(adb arcanist cargo colorize git git-extras gradle jira nvm pip python rust sudo virtualenv)
+plugins=(colorize git git-extras gradle jira nvm pip python rvm sudo virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
