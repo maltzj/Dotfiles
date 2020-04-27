@@ -1,6 +1,5 @@
 [user]
   name = Jonathan Maltz
-  email = maltz@nuna.com 
 [color]
   status = auto
   branch = auto
@@ -61,6 +60,9 @@
   rhard = reset --hard
   oops = reset --hard HEAD
 [core]
-  editor = vim
+    editor = vim
+    preloadindex = true
 [push]
-  default = simple
+    default = simple
+[help]
+    autocorrect = 1
