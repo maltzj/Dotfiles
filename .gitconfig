@@ -44,7 +44,7 @@
   brd = branch -d
   brm = branch -m
   cob = checkout -b
-  cof = "!git checkout -b $USER-feature-\"$1\" #"
+  cof = "!git checkout -b $USER-\"$1\" #"
   cam = commit -am
   dh1 = diff HEAD~1
   rao = remote add origin

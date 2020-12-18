@@ -96,6 +96,12 @@ function merge-master(){
     git co master && git pull --rebase origin master &&  git rebase master ${branch} && git co master && git merge ${branch} && git lf
 }
 
+function delete-branches(){
+   for branch in $@; do
+       git branch -D $branch
+   done
+}
+
 alias workspace='cd ~/Documents/workspace'
 alias diff='diff -y'
 export PATH="$HOME/.pyenv/bin:$PATH"
