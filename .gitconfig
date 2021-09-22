@@ -33,7 +33,6 @@
   co = checkout
   cp = cherry-pick
   dh = diff HEAD
-  fp = push --force-with-lease
   lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   lf = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
   st = stash
@@ -48,6 +47,7 @@
   cof = "!git checkout -b $USER-\"$1\" #"
   cam = commit -am
   dh1 = diff HEAD~1
+  fpo = push --force-with-lease origin
   rao = remote add origin
   rh1 = reset HEAD~1
   rrm = remote rm
