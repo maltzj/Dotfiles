@@ -103,6 +103,3 @@ function delete-branches(){
 }
 
 alias diff='diff -y'
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
