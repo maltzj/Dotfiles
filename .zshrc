@@ -102,7 +102,6 @@ function delete-branches(){
    done
 }
 
-alias workspace='cd ~/Documents/workspace'
 alias diff='diff -y'
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
